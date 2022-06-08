@@ -1,0 +1,314 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2012                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : _7bdb509494-20201222 OPENFOAM=2012
+Arch   : "LSB;label=32;scalar=64"
+Exec   : extrudeMesh
+Date   : Jun 08 2022
+Time   : 04:14:23
+Host   : sylogin2.pi.sjtu.edu.cn
+PID    : 3642674
+I/O    : collated (maxThreadFileBufferSize 0)
+         Threading not activated since maxThreadFileBufferSize = 0.
+         Writing may run slowly for large file sizes.
+Case   : /dssg/home/acct-medgm/medgm/case_axibump/axisymmetricJet
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStamp (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0
+
+Selecting extrudeModel wedge
+Selected extrudeModel for sector using coeffs 
+{
+    axisPt          ( 0 0 0 );
+    axis            ( 1 0 0 );
+    angle           1;
+}
+
+Extruding from patch using model wedge
+Collapsing edges < 0.0001 of bounding box
+
+Extruding patches 1(front) on mesh "/dssg/home/acct-medgm/medgm/case_axibump/axisymmetricJet"
+
+Create mesh for time = 0
+
+Adding overall 0 processor patches.
+Moving mesh to layer0 points since differ from original points - this can happen for wedge extrusions.
+
+Mesh bounding box : (0 0 -0.0349061419935) (25 3.99984769226 0.0349061419935)
+        with span : (25 3.99984769226 0.069812283987)
+Merge distance    : 6.9812283987e-06
+
+Collapsing edges < 6.9812283987e-06 ...
+
+Merging edge (0 15311) since length 0 << 6.9812283987e-06
+Merging edge (1 15312) since length 0 << 6.9812283987e-06
+Merging edge (22 15333) since length 0 << 6.9812283987e-06
+Merging edge (33 15344) since length 0 << 6.9812283987e-06
+Merging edge (44 15355) since length 0 << 6.9812283987e-06
+Merging edge (55 15366) since length 0 << 6.9812283987e-06
+Merging edge (66 15377) since length 0 << 6.9812283987e-06
+Merging edge (77 15388) since length 0 << 6.9812283987e-06
+Merging edge (88 15399) since length 0 << 6.9812283987e-06
+Merging edge (99 15410) since length 0 << 6.9812283987e-06
+Merging edge (110 15421) since length 0 << 6.9812283987e-06
+Merging edge (121 15432) since length 0 << 6.9812283987e-06
+Merging edge (132 15443) since length 0 << 6.9812283987e-06
+Merging edge (143 15454) since length 0 << 6.9812283987e-06
+Merging edge (154 15465) since length 0 << 6.9812283987e-06
+Merging edge (165 15476) since length 0 << 6.9812283987e-06
+Merging edge (176 15487) since length 0 << 6.9812283987e-06
+Merging edge (187 15498) since length 0 << 6.9812283987e-06
+Merging edge (198 15509) since length 0 << 6.9812283987e-06
+Merging edge (209 15520) since length 0 << 6.9812283987e-06
+Merging edge (220 15531) since length 0 << 6.9812283987e-06
+Merging edge (231 15542) since length 0 << 6.9812283987e-06
+Merging edge (242 15553) since length 0 << 6.9812283987e-06
+Merging edge (253 15564) since length 0 << 6.9812283987e-06
+Merging edge (264 15575) since length 0 << 6.9812283987e-06
+Merging edge (275 15586) since length 0 << 6.9812283987e-06
+Merging edge (286 15597) since length 0 << 6.9812283987e-06
+Merging edge (297 15608) since length 0 << 6.9812283987e-06
+Merging edge (308 15619) since length 0 << 6.9812283987e-06
+Merging edge (319 15630) since length 0 << 6.9812283987e-06
+Merging edge (330 15641) since length 0 << 6.9812283987e-06
+Merging edge (341 15652) since length 0 << 6.9812283987e-06
+Merging edge (352 15663) since length 0 << 6.9812283987e-06
+Merging edge (363 15674) since length 0 << 6.9812283987e-06
+Merging edge (374 15685) since length 0 << 6.9812283987e-06
+Merging edge (385 15696) since length 0 << 6.9812283987e-06
+Merging edge (396 15707) since length 0 << 6.9812283987e-06
+Merging edge (407 15718) since length 0 << 6.9812283987e-06
+Merging edge (418 15729) since length 0 << 6.9812283987e-06
+Merging edge (429 15740) since length 0 << 6.9812283987e-06
+Merging edge (440 15751) since length 0 << 6.9812283987e-06
+Merging edge (451 15762) since length 0 << 6.9812283987e-06
+Merging edge (462 15773) since length 0 << 6.9812283987e-06
+Merging edge (473 15784) since length 0 << 6.9812283987e-06
+Merging edge (484 15795) since length 0 << 6.9812283987e-06
+Merging edge (495 15806) since length 0 << 6.9812283987e-06
+Merging edge (506 15817) since length 0 << 6.9812283987e-06
+Merging edge (517 15828) since length 0 << 6.9812283987e-06
+Merging edge (528 15839) since length 0 << 6.9812283987e-06
+Merging edge (539 15850) since length 0 << 6.9812283987e-06
+Merging edge (550 15861) since length 0 << 6.9812283987e-06
+Merging edge (561 15872) since length 0 << 6.9812283987e-06
+Merging edge (572 15883) since length 0 << 6.9812283987e-06
+Merging edge (583 15894) since length 0 << 6.9812283987e-06
+Merging edge (594 15905) since length 0 << 6.9812283987e-06
+Merging edge (605 15916) since length 0 << 6.9812283987e-06
+Merging edge (616 15927) since length 0 << 6.9812283987e-06
+Merging edge (627 15938) since length 0 << 6.9812283987e-06
+Merging edge (638 15949) since length 0 << 6.9812283987e-06
+Merging edge (649 15960) since length 0 << 6.9812283987e-06
+Merging edge (660 15971) since length 0 << 6.9812283987e-06
+Merging edge (671 15982) since length 0 << 6.9812283987e-06
+Merging edge (682 15993) since length 0 << 6.9812283987e-06
+Merging edge (693 16004) since length 0 << 6.9812283987e-06
+Merging edge (704 16015) since length 0 << 6.9812283987e-06
+Merging edge (715 16026) since length 0 << 6.9812283987e-06
+Merging edge (726 16037) since length 0 << 6.9812283987e-06
+Merging edge (737 16048) since length 0 << 6.9812283987e-06
+Merging edge (748 16059) since length 0 << 6.9812283987e-06
+Merging edge (759 16070) since length 0 << 6.9812283987e-06
+Merging edge (770 16081) since length 0 << 6.9812283987e-06
+Merging edge (781 16092) since length 0 << 6.9812283987e-06
+Merging edge (792 16103) since length 0 << 6.9812283987e-06
+Merging edge (803 16114) since length 0 << 6.9812283987e-06
+Merging edge (814 16125) since length 0 << 6.9812283987e-06
+Merging edge (825 16136) since length 0 << 6.9812283987e-06
+Merging edge (836 16147) since length 0 << 6.9812283987e-06
+Merging edge (847 16158) since length 0 << 6.9812283987e-06
+Merging edge (858 16169) since length 0 << 6.9812283987e-06
+Merging edge (869 16180) since length 0 << 6.9812283987e-06
+Merging edge (880 16191) since length 0 << 6.9812283987e-06
+Merging edge (891 16202) since length 0 << 6.9812283987e-06
+Merging edge (902 16213) since length 0 << 6.9812283987e-06
+Merging edge (913 16224) since length 0 << 6.9812283987e-06
+Merging edge (924 16235) since length 0 << 6.9812283987e-06
+Merging edge (935 16246) since length 0 << 6.9812283987e-06
+Merging edge (946 16257) since length 0 << 6.9812283987e-06
+Merging edge (957 16268) since length 0 << 6.9812283987e-06
+Merging edge (968 16279) since length 0 << 6.9812283987e-06
+Merging edge (979 16290) since length 0 << 6.9812283987e-06
+Merging edge (990 16301) since length 0 << 6.9812283987e-06
+Merging edge (1001 16312) since length 0 << 6.9812283987e-06
+Merging edge (1012 16323) since length 0 << 6.9812283987e-06
+Merging edge (1023 16334) since length 0 << 6.9812283987e-06
+Merging edge (1034 16345) since length 0 << 6.9812283987e-06
+Merging edge (1045 16356) since length 0 << 6.9812283987e-06
+Merging edge (1056 16367) since length 0 << 6.9812283987e-06
+Merging edge (1067 16378) since length 0 << 6.9812283987e-06
+Merging edge (1078 16389) since length 0 << 6.9812283987e-06
+Merging edge (1089 16400) since length 0 << 6.9812283987e-06
+Merging edge (1100 16411) since length 0 << 6.9812283987e-06
+Merging edge (1111 16422) since length 0 << 6.9812283987e-06
+Merging edge (1122 16433) since length 0 << 6.9812283987e-06
+Merging edge (1133 16444) since length 0 << 6.9812283987e-06
+Merging edge (1144 16455) since length 0 << 6.9812283987e-06
+Merging edge (1155 16466) since length 0 << 6.9812283987e-06
+Merging edge (1166 16477) since length 0 << 6.9812283987e-06
+Merging edge (1177 16488) since length 0 << 6.9812283987e-06
+Merging edge (1188 16499) since length 0 << 6.9812283987e-06
+Merging edge (1199 16510) since length 0 << 6.9812283987e-06
+Merging edge (1210 16521) since length 0 << 6.9812283987e-06
+Merging edge (1221 16532) since length 0 << 6.9812283987e-06
+Merging edge (1232 16543) since length 0 << 6.9812283987e-06
+Merging edge (1243 16554) since length 0 << 6.9812283987e-06
+Merging edge (1254 16565) since length 0 << 6.9812283987e-06
+Merging edge (1265 16576) since length 0 << 6.9812283987e-06
+Merging edge (1276 16587) since length 0 << 6.9812283987e-06
+Merging edge (1287 16598) since length 0 << 6.9812283987e-06
+Merging edge (1298 16609) since length 0 << 6.9812283987e-06
+Merging edge (1309 16620) since length 0 << 6.9812283987e-06
+Merging edge (1320 16631) since length 0 << 6.9812283987e-06
+Merging edge (1331 16642) since length 0 << 6.9812283987e-06
+Merging edge (1342 16653) since length 0 << 6.9812283987e-06
+Merging edge (1353 16664) since length 0 << 6.9812283987e-06
+Merging edge (1364 16675) since length 0 << 6.9812283987e-06
+Merging edge (1375 16686) since length 0 << 6.9812283987e-06
+Merging edge (1386 16697) since length 0 << 6.9812283987e-06
+Merging edge (1397 16708) since length 0 << 6.9812283987e-06
+Merging edge (1408 16719) since length 0 << 6.9812283987e-06
+Merging edge (1419 16730) since length 0 << 6.9812283987e-06
+Merging edge (1430 16741) since length 0 << 6.9812283987e-06
+Merging edge (1441 16752) since length 0 << 6.9812283987e-06
+Merging edge (1452 16763) since length 0 << 6.9812283987e-06
+Merging edge (1463 16774) since length 0 << 6.9812283987e-06
+Merging edge (1474 16785) since length 0 << 6.9812283987e-06
+Merging edge (1485 16796) since length 0 << 6.9812283987e-06
+Merging edge (1496 16807) since length 0 << 6.9812283987e-06
+Merging edge (1507 16818) since length 0 << 6.9812283987e-06
+Merging edge (1518 16829) since length 0 << 6.9812283987e-06
+Merging edge (1529 16840) since length 0 << 6.9812283987e-06
+Merging edge (1540 16851) since length 0 << 6.9812283987e-06
+Merging edge (1551 16862) since length 0 << 6.9812283987e-06
+Merging edge (1562 16873) since length 0 << 6.9812283987e-06
+Merging edge (1573 16884) since length 0 << 6.9812283987e-06
+Merging edge (1584 16895) since length 0 << 6.9812283987e-06
+Merging edge (1595 16906) since length 0 << 6.9812283987e-06
+Merging edge (1606 16917) since length 0 << 6.9812283987e-06
+Merging edge (1617 16928) since length 0 << 6.9812283987e-06
+Merging edge (1628 16939) since length 0 << 6.9812283987e-06
+Merging edge (1639 16950) since length 0 << 6.9812283987e-06
+Merging edge (1650 16961) since length 0 << 6.9812283987e-06
+Merging edge (1661 16972) since length 0 << 6.9812283987e-06
+Merging edge (1672 16983) since length 0 << 6.9812283987e-06
+Merging edge (1683 16994) since length 0 << 6.9812283987e-06
+Merging edge (1694 17005) since length 0 << 6.9812283987e-06
+Merging edge (1705 17016) since length 0 << 6.9812283987e-06
+Merging edge (1716 17027) since length 0 << 6.9812283987e-06
+Merging edge (1727 17038) since length 0 << 6.9812283987e-06
+Merging edge (1738 17049) since length 0 << 6.9812283987e-06
+Merging edge (1749 17060) since length 0 << 6.9812283987e-06
+Merging edge (1760 17071) since length 0 << 6.9812283987e-06
+Merging edge (1771 17082) since length 0 << 6.9812283987e-06
+Merging edge (1782 17093) since length 0 << 6.9812283987e-06
+Merging edge (1793 17104) since length 0 << 6.9812283987e-06
+Merging edge (1804 17115) since length 0 << 6.9812283987e-06
+Merging edge (1815 17126) since length 0 << 6.9812283987e-06
+Merging edge (1826 17137) since length 0 << 6.9812283987e-06
+Merging edge (1837 17148) since length 0 << 6.9812283987e-06
+Merging edge (1848 17159) since length 0 << 6.9812283987e-06
+Merging edge (1859 17170) since length 0 << 6.9812283987e-06
+Merging edge (1870 17181) since length 0 << 6.9812283987e-06
+Merging edge (1881 17192) since length 0 << 6.9812283987e-06
+Merging edge (1892 17203) since length 0 << 6.9812283987e-06
+Merging edge (1903 17214) since length 0 << 6.9812283987e-06
+Merging edge (1914 17225) since length 0 << 6.9812283987e-06
+Merging edge (1925 17236) since length 0 << 6.9812283987e-06
+Merging edge (1936 17247) since length 0 << 6.9812283987e-06
+Merging edge (1947 17258) since length 0 << 6.9812283987e-06
+Merging edge (1958 17269) since length 0 << 6.9812283987e-06
+Merging edge (1969 17280) since length 0 << 6.9812283987e-06
+Merging edge (1980 17291) since length 0 << 6.9812283987e-06
+Merging edge (1991 17302) since length 0 << 6.9812283987e-06
+Merging edge (2002 17313) since length 0 << 6.9812283987e-06
+Merging edge (2013 17324) since length 0 << 6.9812283987e-06
+Merging edge (2024 17335) since length 0 << 6.9812283987e-06
+Merging edge (2035 17346) since length 0 << 6.9812283987e-06
+Merging edge (2046 17357) since length 0 << 6.9812283987e-06
+Merging edge (2057 17368) since length 0 << 6.9812283987e-06
+Merging edge (2068 17379) since length 0 << 6.9812283987e-06
+Merging edge (2079 17390) since length 0 << 6.9812283987e-06
+Merging edge (2090 17401) since length 0 << 6.9812283987e-06
+Merging edge (2101 17412) since length 0 << 6.9812283987e-06
+Merging edge (2112 17423) since length 0 << 6.9812283987e-06
+Merging edge (2123 17434) since length 0 << 6.9812283987e-06
+Merging edge (2134 17445) since length 0 << 6.9812283987e-06
+Merging edge (2145 17456) since length 0 << 6.9812283987e-06
+Merging edge (2156 17467) since length 0 << 6.9812283987e-06
+Merging edge (2167 17478) since length 0 << 6.9812283987e-06
+Merging edge (2178 17489) since length 0 << 6.9812283987e-06
+Merging edge (2189 17500) since length 0 << 6.9812283987e-06
+Merging edge (2200 17511) since length 0 << 6.9812283987e-06
+Merging edge (2211 17522) since length 0 << 6.9812283987e-06
+Merging edge (2222 17533) since length 0 << 6.9812283987e-06
+Merging edge (2233 17544) since length 0 << 6.9812283987e-06
+Merging edge (2244 17555) since length 0 << 6.9812283987e-06
+Merging edge (2255 17566) since length 0 << 6.9812283987e-06
+Merging edge (2266 17577) since length 0 << 6.9812283987e-06
+Merging edge (2277 17588) since length 0 << 6.9812283987e-06
+Merging edge (2288 17599) since length 0 << 6.9812283987e-06
+Merging edge (2299 17610) since length 0 << 6.9812283987e-06
+Merging edge (2310 17621) since length 0 << 6.9812283987e-06
+Merging edge (2321 17632) since length 0 << 6.9812283987e-06
+Merging edge (2332 17643) since length 0 << 6.9812283987e-06
+Merging edge (2343 17654) since length 0 << 6.9812283987e-06
+Merging edge (2354 17665) since length 0 << 6.9812283987e-06
+Merging edge (2365 17676) since length 0 << 6.9812283987e-06
+Merging edge (2376 17687) since length 0 << 6.9812283987e-06
+Merging edge (2387 17698) since length 0 << 6.9812283987e-06
+Merging edge (2398 17709) since length 0 << 6.9812283987e-06
+Merging edge (2409 17720) since length 0 << 6.9812283987e-06
+Merging edge (2420 17731) since length 0 << 6.9812283987e-06
+Merging edge (2431 17742) since length 0 << 6.9812283987e-06
+Merging edge (2442 17753) since length 0 << 6.9812283987e-06
+Merging edge (2453 17764) since length 0 << 6.9812283987e-06
+Merging edge (2464 17775) since length 0 << 6.9812283987e-06
+Merging edge (2475 17786) since length 0 << 6.9812283987e-06
+Merging edge (2486 17797) since length 0 << 6.9812283987e-06
+Merging edge (2497 17808) since length 0 << 6.9812283987e-06
+Merging edge (2508 17819) since length 0 << 6.9812283987e-06
+Merging edge (2519 17830) since length 0 << 6.9812283987e-06
+Merging edge (2530 17841) since length 0 << 6.9812283987e-06
+Merging edge (2541 17852) since length 0 << 6.9812283987e-06
+Merging edge (2552 17863) since length 0 << 6.9812283987e-06
+Merging edge (2563 17874) since length 0 << 6.9812283987e-06
+Merging edge (2574 17885) since length 0 << 6.9812283987e-06
+Merging edge (2585 17896) since length 0 << 6.9812283987e-06
+Merging edge (2596 17907) since length 0 << 6.9812283987e-06
+Merging edge (2607 17918) since length 0 << 6.9812283987e-06
+Merging edge (2618 17929) since length 0 << 6.9812283987e-06
+Merging edge (2629 17940) since length 0 << 6.9812283987e-06
+Merging edge (2640 17951) since length 0 << 6.9812283987e-06
+Merging edge (2651 17962) since length 0 << 6.9812283987e-06
+Merging edge (2662 17973) since length 0 << 6.9812283987e-06
+Merging edge (2673 17984) since length 0 << 6.9812283987e-06
+Merging edge (2684 17995) since length 0 << 6.9812283987e-06
+Merging edge (2695 18006) since length 0 << 6.9812283987e-06
+Merging edge (2706 18017) since length 0 << 6.9812283987e-06
+Merging edge (2717 18028) since length 0 << 6.9812283987e-06
+Merging edge (2728 18039) since length 0 << 6.9812283987e-06
+Merging edge (2739 18050) since length 0 << 6.9812283987e-06
+Merging edge (2750 18061) since length 0 << 6.9812283987e-06
+            Uncollapsed edges = 0 / 75931
+    Number of points : 30622
+    Not visited      : 0
+    Not collapsed    : 30120
+    Collapsed        : 502
+
+Collapsing 0 cells
+Writing mesh to "/dssg/home/acct-medgm/medgm/case_axibump/axisymmetricJet/constant/region0"
+
+End
+

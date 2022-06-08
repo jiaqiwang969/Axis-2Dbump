@@ -1,4 +1,5 @@
 # case_axibump
+- Aim: 1. new turbulence model vertification. 2. capture shockwave details
 - Ref: [1.Parameter and experimental data](https://turbmodels.larc.nasa.gov/axibump_val.html), [2.geometry setting](https://www.openfoam.com/documentation/guides/latest/doc/verification-validation-turbulent-bump-2d.html)
 
 

@@ -26,7 +26,7 @@ sectorCoeffs
 {
     axisPt          (0 0 0);
     axis            (1 0 0);
-    angle           45;
+    angle           1;
 }
 
 flipNormals     false;

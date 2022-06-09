@@ -1,8 +1,8 @@
-# case_axibump
+# case_axibump STEP BY STEP
 - Aim: 1. new turbulence model vertification. 2. capture shockwave details
 - Ref: [1.Parameter and experimental data](https://turbmodels.larc.nasa.gov/axibump_val.html), [2.geometry setting](https://www.openfoam.com/documentation/guides/latest/doc/verification-validation-turbulent-bump-2d.html), [LES](https://www.alcf.anl.gov/science/projects/large-eddy-simulation-bachalo-johnson-flow-shock-induced-separation)
 
-
+- Acknowledge：Song Moru
 
 
 <img src="https://cdn.mathpix.com/snip/images/ObYqZ8hjnYvciaxMXyc0ILTgwa5HcnvA8VAj-1yDklE.original.fullsize.png" width="340px">
@@ -19,3 +19,11 @@ dy=1.86e-6；
 - Refine in interaction region between shockwave and boundary layer sepeartion
 <img src="https://cdn.mathpix.com/snip/images/5gzw5ey5pTj41cqaHXfbRhedPUCvP0VBsDsvn1gUpcA.original.fullsize.png" width="340px">
 
+
+### Fix mesh: 
+
+1. with double grading mesh, which results in the artificial shock wave. 
+2. inlet boundary with interacted with boundary layer results in unstable effect.
+
+<img src="https://cdn.mathpix.com/snip/images/A_V84gSCSPGv8p9-Se1QHq9EZ-Wf01ZbyJ_rnUe4OsQ.original.fullsize.png" width="340px">
+<img src="https://cdn.mathpix.com/snip/images/hFht3tHHecVr-ngEvZZFo3Z8PRD27J8JgFcVP74NEwo.original.fullsize.png" width="340px">

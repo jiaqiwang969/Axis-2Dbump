@@ -1,47 +1,76 @@
 /*--------------------------------*- C++ -*----------------------------------*\
 | =========                 |                                                 |
 | \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
-|  \\    /   O peration     | Version:  dev                                   |
+|  \\    /   O peration     | Version:  2.1.1                                 |
 |   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
 |    \\/     M anipulation  |                                                 |
 \*---------------------------------------------------------------------------*/
 FoamFile
 {
     version     2.0;
-    format      binary;
-    class       volSymmTensorField;
-    arch        "LSB;label=32;scalar=64";
-    location    "0";
-    object      R;
-
+    format      ascii;
+    class       volScalarField;
+    object      p;
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
-dimensions      [0 2 -2 0 0 0 0];
 
-internalField   uniform (0.0066666667 0 -0 0.0066666667 -0 0.0066666667);
+dimensions      [1 -1 -2 0 0 0 0];
+
+internalField   uniform 1e5;
 
 
 boundaryField
 {
     inlet
     {
-        type calculated;
-        value $internalField;
+        type            zeroGradient;
+//        type            fixedValue;
+//        value           uniform 1e5;
     }
-    atmosphere
+
+
+    outlet
     {
-        type zeroGradient;
+        type            fixedValue;
+        value           $internalField;
+        type            zeroGradient;
     }
+
+
+
+    top
+    {
+        type            symmetry;
+    }
+
     obstacle
     {
-        //type zeroGradient;
-        type kqRWallFunction;
-        value $internalField;
+        type            zeroGradient;
     }
+
+
+    upwall
+    {
+        type            symmetry;
+    }
+
+    downwall
+    {
+        type            symmetry;
+    }
+
+
+
+
+
+
+
+
     front
     {
         type            wedge;
     }
+
     back
     {
         type            wedge;

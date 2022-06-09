@@ -10,45 +10,53 @@ FoamFile
     version     2.0;
     format      ascii;
     class       volScalarField;
-    object      omega;
+    location    "0";
+    object      epsilon;
+
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
-omegaInlet      79859.57062499248;
-//kInlet          45937.5;
-//http://ichrome.com/blogs/archives/342
-//Length L=0.07;velocity=350;Kinematic viscosity v=1.75e-5;Turbulence intensity I=0.5%
 
+dimensions      [0 2 -3 0 0 0 0];
 
-dimensions      [0 0 -1 0 0 0 0];
-
-internalField   uniform $omegaInlet;
+internalField   uniform 6e4;
 
 boundaryField
 {
     inlet
     {
-
-
-        type            turbulentMixingLengthFrequencyInlet;
-        mixingLength    1.0e-5;
-        value         uniform  $omegaInlet;
-
-//        type      fixedValue;
-//        value     uniform  1224;
+        type calculated;
+        value $internalField;
     }
 
-    atmosphere
+    outlet
     {
         type zeroGradient;
     }
+
+    top
+    {
+        type symmetry;
+    }
     obstacle
     {
-        //type            zeroGradient;
-        type       omegaWallFunction;
-        value      uniform 1224;
-        type            omegaWallFunction;
-        value           uniform 1e8;
+        //type zeroGradient;
+        type epsilonWallFunction;
+        value $internalField;
     }
+
+    upwall
+    {
+        type            symmetry;
+    }
+
+    downwall
+    {
+        type            symmetry;
+    }
+
+
+
+
     front
     {
         type            wedge;

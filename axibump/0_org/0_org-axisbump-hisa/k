@@ -14,40 +14,58 @@ FoamFile
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-//omegaInlet      79859.57062499248;
-kInlet          45937.5;
-//http://ichrome.com/blogs/archives/342
-//Length L=0.07;velocity=350;Kinematic viscosity v=1.75e-5;Turbulence intensity I=0.5%
 
-
-kInlet          121;
-kwall           1;
 
 dimensions      [0 2 -2 0 0 0 0];
 
-internalField   uniform $kInlet;
+internalField   uniform 1.08e-3;
+
 
 boundaryField
 {
     inlet
     {
-        type turbulentIntensityKineticEnergyInlet;
-        U    U;
-        phi  phi;
-        intensity 0.05;
-        value uniform $kInlet;
+        type            fixedValue;
+        value           $internalField;
+
+//        type turbulentIntensityKineticEnergyInlet;
+//        U    U;
+//        phi  phi;
+//        intensity 0.05;
+//        value uniform $kInlet;
     }
 
-    atmosphere
+    outlet
     {
-        type zeroGradient;
+	type  zeroGradient;
+    }
+
+    top
+    {
+        type symmetry;
     }
     obstacle
     {
+        type            kqRWallFunction;
+        value           $internalField;
+
         //type zeroGradient;
-        type      kqRWallFunction;
-        value     uniform 121;
+//        type      kqRWallFunction;
+//       value     uniform 121;
     }
+
+    upwall
+    {
+        type            symmetry;
+    }
+
+    downwall
+    {
+        type            symmetry;
+    }
+
+
+
     front
     {
         type            wedge;

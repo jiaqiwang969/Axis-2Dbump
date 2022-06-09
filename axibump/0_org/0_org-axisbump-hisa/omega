@@ -10,30 +10,66 @@ FoamFile
     version     2.0;
     format      ascii;
     class       volScalarField;
-    object      im;
+    object      omega;
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 
-dimensions      [0 0 0 0 0 0 0];
+dimensions      [0 0 -1 0 0 0 0];
 
-internalField   uniform 1.0;
+internalField   uniform 5220.8;
+
 
 boundaryField
 {
     inlet
     {
         type            fixedValue;
-        value           uniform 1.0;
+        value           $internalField;
+
+
+
+//        type            turbulentMixingLengthFrequencyInlet;
+//        mixingLength    1.0e-5;
+//        value         uniform  $omegaInlet;
+
+//        type      fixedValue;
+//        value     uniform  1224;
     }
-    atmosphere
+
+    outlet
     {
-        type            zeroGradient;
+	type zeroGradient;
+    }
+
+    top
+    {
+        type symmetry;
     }
     obstacle
     {
-        type            zeroGradient;
+        type            omegaWallFunction;
+        value           $internalField;
+
+        //type            zeroGradient;
+//        type       omegaWallFunction;
+//        value      uniform 1224;
+//        type            omegaWallFunction;
+//        value           uniform 1e8;
     }
+
+    upwall
+    {
+        type            symmetry;
+    }
+
+    downwall
+    {
+        type            symmetry;
+    }
+
+
+
     front
     {
         type            wedge;

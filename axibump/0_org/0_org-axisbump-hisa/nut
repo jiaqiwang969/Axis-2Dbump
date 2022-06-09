@@ -16,7 +16,9 @@ FoamFile
 
 dimensions      [0 2 -1 0 0 0 0];
 
-internalField   uniform 0;
+internalField   uniform 4.86e-6;
+
+
 
 boundaryField
 {
@@ -25,17 +27,38 @@ boundaryField
         type calculated;
         value $internalField;
     }
-
-    atmosphere
+    outlet
     {
-        type zeroGradient;
+	type zeroGradient;
+    }
+
+
+    top
+    {
+        type symmetry;
     }
     obstacle
     {
         //type zeroGradient;
-        type nutkWallFunction;
-        value $internalField;
+//        type nutkWallFunction;
+//        value $internalField;
+        type            nutLowReWallFunction;
+        value           uniform 0;
+
     }
+
+    upwall
+    {
+        type            symmetry;
+    }
+
+    downwall
+    {
+        type            symmetry;
+    }
+
+
+
     front
     {
         type            wedge;

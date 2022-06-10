@@ -27,3 +27,9 @@ dy=1.86e-6；
 
 <img src="https://cdn.mathpix.com/snip/images/A_V84gSCSPGv8p9-Se1QHq9EZ-Wf01ZbyJ_rnUe4OsQ.original.fullsize.png" width="340px">
 <img src="https://cdn.mathpix.com/snip/images/hFht3tHHecVr-ngEvZZFo3Z8PRD27J8JgFcVP74NEwo.original.fullsize.png" width="340px">
+
+
+### First result:
+<img src="https://cdn.mathpix.com/snip/images/SsDbYAv0cv31TbCmjwTF-ykQxmBAwOZlF-xUss43hkU.original.fullsize.png" width="340px">
+
+Solution: enlarge the upstream & downstream yplus=0.3, enlarge it to 0.6

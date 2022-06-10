@@ -9,7 +9,7 @@
 
 
 ### [Parameter](https://www.cadence.com/ko_KR/home/tools/system-analysis/computational-fluid-dynamics/y-plus.html): 
-<img src="https://cdn.mathpix.com/snip/images/aCe-tY4aLxVDAK_IR0B-ib5mdXAkC6pLYtO6BUr2R-8.original.fullsize.png" width="340px">
+<img src="https://cdn.mathpix.com/snip/images/xfIMy_NrlkIye9j4CilhxaV3AWcoWTgdk3USZgYsGP0.original.fullsize.png" width="340px">
 
 nu=dynamicViscosity/rho=2.2072e-05;
 dy=1.86e-6；

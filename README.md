@@ -37,3 +37,6 @@ dy=1.86e-6；
 Solution: enlarge the upstream & downstream yplus=0.3, enlarge it to 0.6
 
 <img src="https://cdn.mathpix.com/snip/images/cZCuXXo2GdemjLUtzgyBCtY6amG48QcJI-Tp_OX4L3U.original.fullsize.png" width="440px">
+
+### results:
+<img src="https://cdn.mathpix.com/snip/images/LXY8Zg-12qS_KjD2G5hqYuhEnVOD7REh74qW-ssoFpk.original.fullsize.png" width="440px">

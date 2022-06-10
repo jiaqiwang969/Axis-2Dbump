@@ -33,3 +33,5 @@ dy=1.86e-6；
 <img src="https://cdn.mathpix.com/snip/images/SsDbYAv0cv31TbCmjwTF-ykQxmBAwOZlF-xUss43hkU.original.fullsize.png" width="340px">
 
 Solution: enlarge the upstream & downstream yplus=0.3, enlarge it to 0.6
+
+<img src="https://cdn.mathpix.com/snip/images/cZCuXXo2GdemjLUtzgyBCtY6amG48QcJI-Tp_OX4L3U.original.fullsize.png" width="440px">

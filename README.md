@@ -42,4 +42,5 @@ Solution: enlarge the upstream & downstream yplus=0.3, enlarge it to 0.6
 ### results:
 <img src="https://cdn.mathpix.com/snip/images/LXY8Zg-12qS_KjD2G5hqYuhEnVOD7REh74qW-ssoFpk.original.fullsize.png" width="440px">
 
-### IDEAS: [3D wedge](https://github.com/OpenFOAM/OpenFOAM-2.2.x/blob/master/applications/utilities/mesh/generation/extrude/extrudeMesh/extrudeMeshDict)
+### IDEAS: [3D wedge](https://github.com/OpenFOAM/OpenFOAM-2.2.x/blob/master/applications/utilities/mesh/generation/extrude/extrudeMesh/extrudeMeshDict) --> Tip:openfoam v7 is ok, v1816-2016 is broken up.
+

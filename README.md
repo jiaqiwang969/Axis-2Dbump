@@ -33,14 +33,15 @@ dy=1.86e-6；
 
 
 ### First result:
-<img src="https://cdn.mathpix.com/snip/images/SsDbYAv0cv31TbCmjwTF-ykQxmBAwOZlF-xUss43hkU.original.fullsize.png" width="340px">
+
+<img src="https://cdn.mathpix.com/snip/images/Rw_dnHwzjrPKosIKscViZuf9gcHOKURhvqa8Dccu6SY.original.fullsize.png" />
 
 Solution: enlarge the upstream & downstream yplus=0.3, enlarge it to 0.6
 
 <img src="https://cdn.mathpix.com/snip/images/cZCuXXo2GdemjLUtzgyBCtY6amG48QcJI-Tp_OX4L3U.original.fullsize.png" width="440px">
 
 ### results:
-<img src="https://cdn.mathpix.com/snip/images/LXY8Zg-12qS_KjD2G5hqYuhEnVOD7REh74qW-ssoFpk.original.fullsize.png" width="440px">
+<img src="https://cdn.mathpix.com/snip/images/Rw_dnHwzjrPKosIKscViZuf9gcHOKURhvqa8Dccu6SY.original.fullsize.png"  width="440px">
 
 ### IDEAS: [3D wedge](https://github.com/OpenFOAM/OpenFOAM-2.2.x/blob/master/applications/utilities/mesh/generation/extrude/extrudeMesh/extrudeMeshDict) --> Tip:openfoam v7 is ok, v1816-2016 is broken up.
 

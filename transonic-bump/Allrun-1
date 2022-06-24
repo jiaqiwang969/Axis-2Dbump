@@ -10,11 +10,12 @@ cd "${0%/*}" || exit                                # Run from this directory
 
     # operand setups
     setups="
-    iddesGammaTheta
-    kOmegaSST
-    SpalartAllmaras
-    kEpsilonPhitF
+    SpalartAllmarasIDDES
     "
+#    iddesGammaTheta
+#    kOmegaSST
+#    SpalartAllmaras
+#    kEpsilonPhitF
 
     # flag to enable computations in parallel mode
     parallel=true

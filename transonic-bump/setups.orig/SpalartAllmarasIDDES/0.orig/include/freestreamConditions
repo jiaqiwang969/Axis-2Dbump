@@ -1,0 +1,25 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.2.0                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+
+
+gamma           1.4;
+R               287.05;
+ptotal          101325;
+Mach            0.875;
+Tinlet          300;
+soundSpeedInlet #eval{sqrt($gamma*$R*$Tinlet)};
+vinlet          #eval{$soundSpeedInlet*$Mach};
+pinlet          #eval{$ptotal/(1+0.5*sqr($vinlet)/$R/$Tinlet)};
+rhoinlet        #eval{$pinlet/$R/$Tinlet};
+Ttotal          #eval{$Tinlet + $Tinlet*$Mach*$Mach*($gamma-1)/2};
+Uinlet          ($vinlet 0 0);
+
+#inputMode   merge
+
+// ************************************************************************* //
+

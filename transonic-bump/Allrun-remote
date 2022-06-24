@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH --job-name=runFoam-V1.12
-#SBATCH --partition=64c512g
+#SBATCH --partition=debug64c512g
 #SBATCH -n 64
 #SBATCH --ntasks-per-node=64
 #SBATCH --output=%j.out

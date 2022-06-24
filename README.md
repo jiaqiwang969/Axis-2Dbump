@@ -35,6 +35,8 @@ dy=1.86e-6；
 <img src="https://cdn.mathpix.com/snip/images/Rw_dnHwzjrPKosIKscViZuf9gcHOKURhvqa8Dccu6SY.original.fullsize.png"  width="440px">
 
 
+Finding: for steady flow simulation, SAIDDES is not suitable, except gammaReThetaIDDES. 
+
 
 
 ### IDEAS: [3D wedge](https://github.com/OpenFOAM/OpenFOAM-2.2.x/blob/master/applications/utilities/mesh/generation/extrude/extrudeMesh/extrudeMeshDict) --> Tip:openfoam v7 is ok, v1816-2016 is broken up.
